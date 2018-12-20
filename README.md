@@ -14,8 +14,8 @@ js库路径: [地址](https://github.com/DearVikki/wxa-canvas2pic/blob/master/pa
 import CanvasPainter from './CanvasPainter';
 
 const config = [
-{type:'rect, width: 640, height: 560, x: 0, y: 0, color: '#fff'},
-{type: 'text', text: '测试文本', color: '#1499f8',size: 50, x: 30,y: 100}
+	{type:'rect, width: 640, height: 560, x: 0, y: 0, color: '#fff'},
+	{type: 'text', text: '测试文本', color: '#1499f8',size: 50, x: 30,y: 100}
 ]
 
 // 初始化
@@ -31,7 +31,7 @@ painter.resetConfig(newConfig);
 
 // 画图
 painter.draw().then(() => {
-		console.log('画图完成');   
+	console.log('画图完成');   
 }).catch(e => {
     console.log('生成图片失败', e);
 });
@@ -41,7 +41,7 @@ painter.preview();
 
 // 保存
 painter.save().then(() => {
-		console.log('保存图片完成');   
+	console.log('保存图片完成');   
 }).catch(e => {
     console.log('保存图片失败', e);
 });
