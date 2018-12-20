@@ -6,6 +6,8 @@
 - canvas尺寸以一般设计稿的750px为准(可配)，在不同屏幕机型下等比缩放。
 - 生成图片时，支持图片预下载，及在一个小程序周期内缓存图片下载的tmp路径。
 
+js库路径: [地址](https://github.com/DearVikki/wxa-canvas2pic/blob/master/pages/component/canvas-pic/CanvasPainter.js)
+
 使用也很简单：
 
 ```
@@ -29,7 +31,7 @@ painter.resetConfig(newConfig);
 
 // 画图
 painter.draw().then(() => {
-	console.log('画图完成');   
+		console.log('画图完成');   
 }).catch(e => {
     console.log('生成图片失败', e);
 });
@@ -39,9 +41,9 @@ painter.preview();
 
 // 保存
 painter.save().then(() => {
-	console.log('画图完成');   
+		console.log('保存图片完成');   
 }).catch(e => {
-    console.log('生成图片失败', e);
+    console.log('保存图片失败', e);
 });
 ```
 
