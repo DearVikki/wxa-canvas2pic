@@ -1,0 +1,14 @@
+<button bindtap="openCanvas1">生成Canvas图片</button>
+<view class="mask {{!example1.show && 'hide'}}" bindtap="closeCanvas1">
+    <canvas-pic
+      id="example1"
+      data-id="example1"
+      canvasData="{{example1.data}}"
+      width="{{640}}"
+      height="{{560}}"
+      bind:attached="setCanvasInstance"
+      catch:tap="previewCanvas1"
+    />
+    <button class="btn" catchtap="editCanvas1">消灭兔美酱</button>
+    <button class="btn" catchtap="saveCanvas1" open-type="{{openType}}">保存兔美酱</button>
+</view>

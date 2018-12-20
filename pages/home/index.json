@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "canvas2pic",
+  "usingComponents": {
+    "canvas-pic": "../component/canvas-pic/index"
+  }
+}
